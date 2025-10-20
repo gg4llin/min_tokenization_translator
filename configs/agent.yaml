@@ -1,0 +1,42 @@
+name: mrconductor-agent
+description: >
+  Reference agent configuration for interacting with the MrConductor compression stack.
+version: 0.1.0
+
+handshake:
+  endpoint: https://mrconductor.example.com/handshake
+  feature_flags:
+    ascii_core: true
+    dynamic_packs: true
+    relational_context: true
+    checksums: true
+    unicode_overlay: false
+    serialization: false
+    mcp_tooling: false
+    reusable_keys: false
+
+distill:
+  endpoint: https://mrconductor.example.com/distill
+  retry_policy:
+    attempts: 3
+    backoff_seconds: 2
+
+encoding:
+  transport: ascii
+  serialization: disabled
+
+logging:
+  level: info
+  format: json
+  redact_fields:
+    - handshake_packet
+    - private_key
+
+security:
+  ssh_key_storage: workspace/.keys
+  rotate_keys_days: 14
+  tls_verify: true
+
+monitoring:
+  enable_metrics: true
+  endpoint: https://metrics.example.com/collect

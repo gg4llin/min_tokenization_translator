@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mrconductor"
+version = "0.1.0"
+description = "Compression stack for token-efficient machine-to-machine prompts."
+requires-python = ">=3.9"
+authors = [{name = "MrConductor Maintainers"}]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "mypy",
+]
+server = [
+    "fastapi",
+    "uvicorn",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
