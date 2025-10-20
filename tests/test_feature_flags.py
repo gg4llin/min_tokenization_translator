@@ -1,4 +1,4 @@
-from mrconductor.config import FeatureFlag, FeatureFlags
+from min_tokenization_translator.config import FeatureFlag, FeatureFlags
 
 
 def test_feature_flags_roundtrip():

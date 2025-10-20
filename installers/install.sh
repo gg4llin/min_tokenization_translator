@@ -48,7 +48,7 @@ ensure_command python3
 
 log "Detected root directory ${ROOT_DIR}"
 
-PREFIX="${ROOT_DIR}/.mrconductor"
+PREFIX="${ROOT_DIR}/.min_tokenization_translator"
 mkdir -p "${PREFIX}/bin"
 log "Using installation prefix ${PREFIX}"
 
@@ -89,15 +89,15 @@ EOT
 }
 
 log "Installing CLI wrappers"
-create_wrapper "mrconductor-bootstrap" "bootstrap_session.py"
-create_wrapper "mrconductor-benchmark" "run_benchmark.py"
+create_wrapper "mtt-bootstrap" "bootstrap_session.py"
+create_wrapper "mtt-benchmark" "run_benchmark.py"
 
 if command -v docker >/dev/null 2>&1; then
-  log "Building Docker image (mrconductor:latest)"
+  log "Building Docker image (min-tokenization-translator:latest)"
   if [ "$VERBOSE" = true ]; then
-    docker build -t mrconductor:latest "${ROOT_DIR}"
+    docker build -t min-tokenization-translator:latest "${ROOT_DIR}"
   else
-    docker build -q -t mrconductor:latest "${ROOT_DIR}" >/dev/null
+    docker build -q -t min-tokenization-translator:latest "${ROOT_DIR}" >/dev/null
   fi
 else
   log "Docker not available; skipping image build"
@@ -109,6 +109,6 @@ Add ${PREFIX}/bin to your PATH, e.g.:
   export PATH=\$PATH:${PREFIX}/bin
 
 Available commands:
-  mrconductor-bootstrap
-  mrconductor-benchmark
+  mtt-bootstrap
+  mtt-benchmark
 SUMMARY

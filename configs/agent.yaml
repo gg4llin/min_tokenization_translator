@@ -1,10 +1,10 @@
-name: mrconductor-agent
+name: min-tokenization-translator-agent
 description: >
-  Reference agent configuration for interacting with the MrConductor compression stack.
+  Reference agent configuration for interacting with the Min Tokenization Translator compression stack.
 version: 0.1.0
 
 handshake:
-  endpoint: https://mrconductor.example.com/handshake
+  endpoint: https://min-tokenization-translator.example.com/handshake
   feature_flags:
     ascii_core: true
     dynamic_packs: true
@@ -16,7 +16,7 @@ handshake:
     reusable_keys: false
 
 distill:
-  endpoint: https://mrconductor.example.com/distill
+  endpoint: https://min-tokenization-translator.example.com/distill
   retry_policy:
     attempts: 3
     backoff_seconds: 2

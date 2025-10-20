@@ -3,11 +3,11 @@ requires = ["setuptools>=64", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "mrconductor"
+name = "min-tokenization-translator"
 version = "0.1.0"
-description = "Compression stack for token-efficient machine-to-machine prompts."
+description = "Min Tokenization Translator: compression stack for token-efficient machine-to-machine prompts."
 requires-python = ">=3.9"
-authors = [{name = "MrConductor Maintainers"}]
+authors = [{name = "Min Tokenization Translator Maintainers"}]
 dependencies = []
 
 [project.optional-dependencies]

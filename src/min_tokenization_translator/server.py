@@ -41,7 +41,7 @@ class DistillResponse(BaseModel):
 
 
 def create_app() -> "FastAPI":
-    app = FastAPI(title="MrConductor Host", version="0.1.0")
+    app = FastAPI(title="Min Tokenization Translator Host", version="0.1.0")
     distiller = PromptDistiller()
 
     @app.post("/handshake", response_model=HandshakeResponse)

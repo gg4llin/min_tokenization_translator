@@ -2,7 +2,7 @@
 
 ## Scope
 
-- Build a lightweight MCP server that proxies the MrConductor pipeline.
+- Build a lightweight MCP server that proxies the Min Tokenization Translator pipeline.
 - Allow the server to maintain session lexicons and feature flags across clients.
 - Explore optional embedded domain agent for adaptive pack recommendations.
 

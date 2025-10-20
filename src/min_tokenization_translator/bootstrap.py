@@ -10,7 +10,7 @@ from .handshake import HandshakeConfig, HandshakeManager
 
 @dataclass
 class BootstrapConfig:
-    """Configuration for provisioning a new MrConductor environment."""
+    """Configuration for provisioning a new Min Tokenization Translator environment."""
 
     workspace_dir: Path
     packs_dir: Path

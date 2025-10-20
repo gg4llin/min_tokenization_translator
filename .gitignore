@@ -2,7 +2,7 @@
 __pycache__/
 .mypy_cache/
 .pytest_cache/
-.mrconductor/
+.min_tokenization_translator/
 *.pyc
 *.pyo
 *.pyd

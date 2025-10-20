@@ -1,6 +1,6 @@
 # Deployment Guide
 
-This guide describes how to deploy the MrConductor compression stack in different environments and prepare supporting infrastructure.
+This guide describes how to deploy the Min Tokenization Translator compression stack in different environments and prepare supporting infrastructure.
 
 ## 1. Prerequisites
 
@@ -15,7 +15,7 @@ This guide describes how to deploy the MrConductor compression stack in differen
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -e .[server]
-uvicorn mrconductor.server:create_app --host 0.0.0.0 --port 8080
+uvicorn min_tokenization_translator.server:create_app --host 0.0.0.0 --port 8080
 ```
 
 ### Windows
@@ -24,7 +24,7 @@ uvicorn mrconductor.server:create_app --host 0.0.0.0 --port 8080
 python -m venv .venv
 . .\.venv\Scripts\Activate.ps1
 pip install -e .[server]
-uvicorn mrconductor.server:create_app --host 0.0.0.0 --port 8080
+uvicorn min_tokenization_translator.server:create_app --host 0.0.0.0 --port 8080
 ```
 
 ### Verify
@@ -37,11 +37,11 @@ curl -X POST http://localhost:8080/handshake -H "Content-Type: application/json"
 
 1. Build image:
    ```bash
-   docker build -t mrconductor:latest .
+   docker build -t min-tokenization-translator:latest .
    ```
 2. Run container:
    ```bash
-   docker run -p 8080:8080 --name mrconductor mrconductor:latest
+   docker run -p 8080:8080 --name min-tokenization-translator min-tokenization-translator:latest
    ```
 3. Use environment variables for logging, security, or to mount pack directories (`-v /data/packs:/app/workspace/packs`).
 
@@ -67,7 +67,7 @@ curl -X POST http://localhost:8080/handshake -H "Content-Type: application/json"
 
 ## 7. Rollback Strategy
 
-- Keep previous Docker images tagged (e.g., `mrconductor:previous`).
+- Keep previous Docker images tagged (e.g., `min-tokenization-translator:previous`).
 - Store pack registries with version metadata to support downgrade.
 - Maintain infrastructure templates for quick redeploy of last-known-good state.
 

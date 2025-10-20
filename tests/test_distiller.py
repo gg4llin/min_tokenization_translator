@@ -1,4 +1,4 @@
-from mrconductor.distiller import PromptDistiller
+from min_tokenization_translator.distiller import PromptDistiller
 
 
 def test_distiller_extracts_graph_and_lexicon():

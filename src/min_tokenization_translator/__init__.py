@@ -1,5 +1,5 @@
 """
-MrConductor compression stack.
+Min Tokenization Translator compression stack.
 
 Provides modular components for feature flag negotiation, secure handshakes,
 bootstrap utilities, and benchmarking harnesses that implement the protocol

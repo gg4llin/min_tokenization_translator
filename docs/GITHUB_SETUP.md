@@ -1,6 +1,6 @@
 # GitHub Setup Guide
 
-This guide helps publish the MrConductor codebase to a new GitHub repository.
+This guide helps publish the Min Tokenization Translator codebase to a new GitHub repository.
 
 ## 1. Initialize Git (if not already)
 
@@ -13,7 +13,7 @@ git commit -m "Initial commit"
 ## 2. Create Remote Repository
 
 1. Navigate to https://github.com/new.
-2. Name the repository (e.g., `mrconductor`), choose visibility, and skip initializing with README if this repo already has one.
+2. Name the repository (e.g., `min_tokenization_translator`), choose visibility, and skip initializing with README if this repo already has one.
 3. Copy the remote URL (SSH or HTTPS).
 
 ## 3. Add Remote & Push

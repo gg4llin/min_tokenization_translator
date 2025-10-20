@@ -1,11 +1,11 @@
 # Hosting & Deployment Guide
 
-This guide describes how to deploy the counterparty service that interacts with the MrConductor compression stack. It covers multiple hosting models and highlights tradeoffs so you can pick the option with the best efficacy for your workload.
+This guide describes how to deploy the counterparty service that interacts with the Min Tokenization Translator compression stack. It covers multiple hosting models and highlights tradeoffs so you can pick the option with the best efficacy for your workload.
 
 ## 1. FastAPI Service (Recommended)
 
 - **Use when**: you control both endpoints and need low-latency, high-throughput exchanges.
-- **How it works**: deploy the provided FastAPI app (`mrconductor.server.create_app`) behind a reverse proxy. The service exposes:
+- **How it works**: deploy the provided FastAPI app (`min_tokenization_translator.server.create_app`) behind a reverse proxy. The service exposes:
   - `POST /handshake` for feature negotiation (ASCII baseline, Unicode overlay, serialization, MCP, etc.).
   - `POST /distill` for preprocessing prompts prior to encoding.
 - **Hosting**: containerize with Docker, deploy on managed Kubernetes or serverless containers (Cloud Run, App Runner). Use HTTP/2 for efficient streaming.

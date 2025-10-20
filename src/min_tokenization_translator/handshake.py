@@ -16,7 +16,7 @@ class HandshakeConfig:
 
     protocol_version: str = "1.0"
     tokenizer_fingerprint: str = "gpt-4o-mini"
-    key_dir: Path = Path.home() / ".mrconductor" / "keys"
+    key_dir: Path = Path.home() / ".min_tokenization_translator" / "keys"
     ssh_key_type: str = "ed25519"
 
 
@@ -80,7 +80,7 @@ class HandshakeManager:
             "-N",
             "",
             "-C",
-            "mrconductor-session",
+            "min-tokenization-translator-session",
         ]
         try:
             subprocess.run(cmd, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)

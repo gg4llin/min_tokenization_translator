@@ -1,6 +1,6 @@
-# MrConductor Usage Guide
+# Min Tokenization Translator Usage Guide
 
-This guide walks through using the MrConductor compression stack from project bootstrap to running benchmarks and hosting the remote service.
+This guide walks through using the Min Tokenization Translator compression stack from project bootstrap to running benchmarks and hosting the remote service.
 
 ## 1. Prerequisites
 
@@ -59,7 +59,7 @@ Metrics reported:
 2. Launch the FastAPI host:
 
 ```bash
-PYTHONPATH=src uvicorn mrconductor.server:create_app --host 0.0.0.0 --port 8080
+PYTHONPATH=src uvicorn min_tokenization_translator.server:create_app --host 0.0.0.0 --port 8080
 ```
 
 Routes include:
@@ -70,7 +70,7 @@ Routes include:
 
 - **Custom GPT**: register the FastAPI service as an OpenAI Action.
 - **MCP Server**: wrap modules as Model Context Protocol tools.
-- **Direct SDK**: import `mrconductor` package inside your application to use Distiller, HandshakeManager, etc.
+- **Direct SDK**: import `min_tokenization_translator` package inside your application to use Distiller, HandshakeManager, etc.
 
 ## 7. Troubleshooting
 

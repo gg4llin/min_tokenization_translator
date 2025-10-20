@@ -1,5 +1,5 @@
-from mrconductor.benchmark import BenchmarkConfig, BenchmarkRunner
-from mrconductor.config import FeatureFlag, FeatureFlags
+from min_tokenization_translator.benchmark import BenchmarkConfig, BenchmarkRunner
+from min_tokenization_translator.config import FeatureFlag, FeatureFlags
 
 
 def test_benchmark_runs_with_feature_flags():

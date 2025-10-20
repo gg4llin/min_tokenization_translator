@@ -1,8 +1,8 @@
 from pathlib import Path
 from unittest import mock
 
-from mrconductor.config import FeatureFlag, FeatureFlags
-from mrconductor.handshake import HandshakeConfig, HandshakeManager
+from min_tokenization_translator.config import FeatureFlag, FeatureFlags
+from min_tokenization_translator.handshake import HandshakeConfig, HandshakeManager
 
 
 def _fake_keypair(tmp_path: Path) -> Path:

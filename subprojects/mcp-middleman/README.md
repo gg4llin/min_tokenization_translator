@@ -1,6 +1,6 @@
 # MCP Middleman Subproject
 
-This subproject explores an intermediary MCP server that manages handshake negotiation, dictionary caching, and domain-specific tuning before relaying payloads to the main MrConductor compression stack.
+This subproject explores an intermediary MCP server that manages handshake negotiation, dictionary caching, and domain-specific tuning before relaying payloads to the main Min Tokenization Translator compression stack.
 
 ## Objectives
 

@@ -4,11 +4,11 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-from mrconductor.bootstrap import BootstrapConfig, bootstrap_environment
+from min_tokenization_translator.bootstrap import BootstrapConfig, bootstrap_environment
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="Bootstrap a MrConductor session workspace.")
+    parser = argparse.ArgumentParser(description="Bootstrap a Min Tokenization Translator session workspace.")
     parser.add_argument("--workspace-dir", type=Path, default=Path("./workspace"))
     parser.add_argument("--packs-dir", type=Path, default=Path("./workspace/packs"))
     parser.add_argument("--reuse-keys", action="store_true")

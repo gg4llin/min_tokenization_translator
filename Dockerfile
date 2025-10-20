@@ -14,4 +14,4 @@ RUN pip install --upgrade pip && \
 
 EXPOSE 8080
 
-CMD ["uvicorn", "mrconductor.server:create_app", "--host", "0.0.0.0", "--port", "8080"]
+CMD ["uvicorn", "min_tokenization_translator.server:create_app", "--host", "0.0.0.0", "--port", "8080"]

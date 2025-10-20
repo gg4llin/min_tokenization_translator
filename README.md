@@ -1,11 +1,11 @@
-# MrConductor Compression Stack
+# Min Tokenization Translator Compression Stack
 
 Modular tooling for building and benchmarking compact machine-to-machine prompt exchanges. It implements the compressed protocol defined in `prompt.md`, adds feature flag negotiation, secure handshakes, bootstrap utilities, and benchmarking harnesses that compare savings versus standard prompting.
 
 ## Repository Layout
 
 - `prompt.md` — primary specification for the compressed language, workflows, and design notes.
-- `src/mrconductor/` — Python package housing configuration, handshake, bootstrap, and benchmarking modules.
+- `src/min_tokenization_translator/` — Python package housing configuration, handshake, bootstrap, and benchmarking modules.
 - `scripts/` — command-line entry points.
 - `docs/` — architecture and protocol references.
 - `tests/` — regression and contract tests.
@@ -51,4 +51,4 @@ pytest
 - Linux/macOS: `bash installers/install.sh [-v]`
 - Windows: `powershell -ExecutionPolicy Bypass -File installers/install.ps1 [-VerboseMode]`
 
-Verbose flags stream progress in real time. Both installers create a virtualenv, install dependencies, build the optional Docker image (if available), and drop CLI wrappers into `.mrconductor/bin/`.
+Verbose flags stream progress in real time. Both installers create a virtualenv, install dependencies, build the optional Docker image (if available), and drop CLI wrappers into `.min_tokenization_translator/bin/` (`mtt-bootstrap`, `mtt-benchmark`).

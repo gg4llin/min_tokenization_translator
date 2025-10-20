@@ -1,6 +1,6 @@
-from mrconductor.config import FeatureFlags, FeatureFlag
-from mrconductor.distiller import PromptDistiller
-from mrconductor.encoder import SymbolEncoder
+from min_tokenization_translator.config import FeatureFlags, FeatureFlag
+from min_tokenization_translator.distiller import PromptDistiller
+from min_tokenization_translator.encoder import SymbolEncoder
 
 
 def test_symbol_encoder_assigns_symbols():

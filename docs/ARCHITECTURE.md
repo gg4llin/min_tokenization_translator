@@ -28,7 +28,7 @@ The system is composed of modular services that align with the language specific
 ### TransportAdapter
 - Abstracts API clients, ensuring UTF-8 fidelity, tracing, and observability.
 - Optional MCP interface exposes `distill`, `encode`, `decode`, and `analyze_savings` commands.
-- FastAPI host (`mrconductor.server`) wraps these adapters as REST endpoints for remote agents.
+- FastAPI host (`min_tokenization_translator.server`) wraps these adapters as REST endpoints for remote agents.
 
 ### MetricsMonitor
 - Records token counts before and after compression.
